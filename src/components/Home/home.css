@@ -77,3 +77,62 @@
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .home {
+    flex-direction: column;
+  }
+
+  .desc {
+    width: 100%;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+
+  .image {
+    width: 100%;
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .desc h1 {
+    font-size: 2rem;
+  }
+
+  .desc h2 {
+    font-size: 1.5rem;
+  }
+
+  .desc p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .desc h1 {
+    font-size: 1.8rem;
+  }
+
+  .desc h2 {
+    font-size: 1.3rem;
+  }
+
+  .desc p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .desc h1 {
+    font-size: 1.5rem;
+  }
+
+  .desc h2 {
+    font-size: 1.1rem;
+  }
+
+  .desc p {
+    font-size: 0.7rem;
+  }
+}

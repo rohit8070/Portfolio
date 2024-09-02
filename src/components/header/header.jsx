@@ -1,11 +1,12 @@
+import React, { useState } from "react";
 import "./header.css";
-import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
+    setMenuOpen((prevMenuOpen) => !prevMenuOpen);
   };
 
   const closeMenu = () => {
@@ -19,7 +20,7 @@ export default function Header() {
           Rohit
         </a>
 
-        <div className={`nav__menu ${menuOpen ? "nav__menu--open" : ""}`}>
+        <div className={`nav__menu ${menuOpen ? "show-menu" : ""}`}>
           <ul className="nav__list">
             <li className="nav__item">
               <a href="#home" className="nav__link" onClick={closeMenu}>
@@ -47,12 +48,21 @@ export default function Header() {
               </a>
             </li>
           </ul>
+          <span
+            className="nav__close"
+            onClick={closeMenu}
+            aria-label="Close menu"
+          >
+            <FaTimes />
+          </span>
         </div>
-        <div className="nav__toggle" onClick={toggleMenu}>
-          <span className="nav__toggle-bar"></span>
-          <span className="nav__toggle-bar"></span>
-          <span className="nav__toggle-bar"></span>
-        </div>
+        <button
+          className="nav__toggle"
+          onClick={toggleMenu}
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+        >
+          {menuOpen ? <FaTimes /> : <FaBars />}
+        </button>
       </nav>
     </header>
   );
