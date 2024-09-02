@@ -1,0 +1,70 @@
+.skills {
+  min-height: 75vh; /* Ensure this section takes at least full viewport height */
+  padding-top:3rem;/* border: 2px solid black; */
+}
+.skills_title {
+  text-align: center;
+  padding-top: 5rem;
+  font-weight: 600;
+}
+.skills_subtitle {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.skill_title {
+  font-weight: 900;
+  padding-bottom: 1rem;
+}
+
+
+.skills_container {
+  display: grid;
+  grid-template-columns: repeat(2, 350px);
+  column-gap: 3rem;
+  justify-content: center;
+}
+
+.skill_content {
+  background-color: rgba(220, 217, 217, 0.814);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 2rem 4rem;
+  border-radius: 1.25rem;
+  margin-bottom: 5rem;
+}
+
+.skill_title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.skill_box {
+  display: flex;
+  column-gap: 2.5rem;
+  justify-content: center;
+}
+
+.skill_group {
+  display: grid;
+  align-items: flex-start;
+  row-gap: 1rem;
+}
+
+.skill_data {
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.bx-badge-check {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.skill_name {
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.skill_level {
+  font-size: 0.8rem;
+}

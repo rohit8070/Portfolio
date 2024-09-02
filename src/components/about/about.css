@@ -1,0 +1,64 @@
+.about {
+  min-height: 75vh; /* Ensure this section takes at least full viewport height */
+  padding-top: 5rem;
+  /* border: 2px solid black; */
+}
+
+.aboutheading {
+  text-align: center;
+  padding-top: 2rem;
+  font-weight: 600;
+}
+.aboutsubheading {
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.aboutimage {
+  min-height: 75vh;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image1 {
+  height: 300px;
+  width: 350px;
+  border-radius: 6%;
+  margin-left: 3rem;
+}
+
+.info {
+  min-height: 75vh;
+  width: 50vw;
+  /* border: 2px solid black; */
+}
+.infopara {
+  padding: 2rem;
+  padding-right: 3rem;
+  margin-top: 5rem;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.buttoncv {
+  background-color: #555555;
+  width: 8rem;
+  height: 3rem;
+  color: aliceblue;
+  padding: px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 0.5rem;
+  margin-left: 2rem;
+}
+.buttoncv:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}

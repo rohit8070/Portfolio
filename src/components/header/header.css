@@ -1,0 +1,101 @@
+.nav {
+  height: 5rem;
+  width: 100vw;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(220, 217, 217, 0.999);
+}
+
+.nav__logo {
+  padding-left: 13rem;
+  font-size: 2rem;
+  color: black;
+  font-weight: 800;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  padding-right: 8rem;
+  font-size: 1.2rem;
+}
+
+.nav__item {
+  padding-left: 1.4rem;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.nav__link:hover {
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+.nav__menu {
+  display: flex;
+}
+
+.nav__toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav__logo {
+    padding-left: 1rem; /* Adjust logo padding for smaller screens */
+  }
+
+  .nav__menu {
+    display: none; /* Hide menu by default on small screens */
+    flex-direction: column; /* Stack menu items vertically */
+    position: fixed; /* Change to fixed to occupy 30% width */
+    top: 0;
+    right: 0;
+    width: 30%; /* Make menu occupy 30% width */
+    height: 100%; /* Make menu occupy 100% height */
+    background-color: rgba(220, 217, 217, 0.999);
+     border-left: 1px solid black;
+     padding-top: 4rem;
+  }
+
+  .nav__menu--open {
+    display: flex; /* Display menu when open */
+  }
+
+  .nav__list {
+    flex-direction: column; /* Stack menu items vertically */
+    padding-right: 0;
+  }
+
+  .nav__item {
+    padding: 1rem;
+    text-align: center; /* Center-align menu items */
+  }
+
+  .nav__toggle {
+    display: flex; /* Show toggle button on small screens */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1rem;
+    cursor: pointer;
+  }
+
+  .nav__toggle-bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 3px 0; /* Spacing between bars */
+  }
+}

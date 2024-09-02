@@ -1,0 +1,79 @@
+.home {
+  padding-top: 5rem;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.desc {
+  height: 28rem;
+  width: 50vw;
+  padding-top: 10rem;
+  padding-left: 13rem;
+  /* margin-left: 2rem; */
+}
+
+.desc h1,
+.desc h2,
+.desc p {
+  font-weight: 600;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+}
+
+.desc p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.button {
+  background-color: #555555;
+  color: aliceblue;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 0.5rem;
+}
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.image {
+  height: 28rem;
+  width: 50vw;
+  padding-top: 20rem;
+  display: flex; /* Added to center the image */
+  justify-content: center; /* Added to center the image */
+  align-items: center; /* Added to center the image */
+}
+
+._img {
+  background-image: url(../../assets/Rohit.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 9px rgba(0, 0, 0, 0.003);
+  animation-name: profile__animate; /* Added animation properties */
+  animation-duration: 5s; /* Set the duration of the animation */
+  animation-iteration-count: infinite; /* Set the animation to loop infinitely */
+  width: 350px;
+  height: 350px;
+  margin-bottom: 10rem;
+}
+.image:hover {
+  cursor: pointer;
+}
+@keyframes profile__animate {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
