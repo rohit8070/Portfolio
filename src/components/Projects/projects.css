@@ -156,7 +156,7 @@
     padding: 0;
   }
 }
-@media screen and (max-width: 391px) {
+@media screen and (max-width: 410px) {
   .projects_container {
     grid-template-columns: max-content;
   }
