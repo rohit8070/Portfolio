@@ -20,15 +20,18 @@
   display: flex;
   justify-content: center;
   padding-bottom: 4rem;
+  gap: 2rem;
 }
 
 .contact-description {
   width: 50vw;
 }
+
 .desc_heading {
   padding-left: 8rem;
   padding-top: 1rem;
 }
+
 .descpara {
   padding: 2rem;
   padding-left: 8rem;
@@ -80,7 +83,6 @@
   width: 8rem;
   height: 3rem;
   color: aliceblue;
-  padding: px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -88,21 +90,67 @@
   border-radius: 0.5rem;
   margin-left: 2rem;
 }
+
 .Submit_button:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
+}
+.contact-inputs input:focus,
+.contact-inputs textarea:focus {
+  outline: none; /* Remove default browser outline */
+  border: 1px solid black; /* Change border to black on focus */
+  box-shadow: none; /* Remove any default shadow (if needed) */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .contact_container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    gap: 2rem; /* Add spacing between description and form */
   }
 
   .contact-description,
   .contact-form {
-    width: 100%;
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .desc_heading,
+  .descpara {
+    padding-left: 0; /* Remove excessive padding on mobile */
+    text-align: center; /* Center align text on smaller screens */
+  }
+
+  .contact_form {
+    padding-left: 0; /* Remove left padding for smaller devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact_title {
+    font-size: 1.5rem; /* Adjust title size for small screens */
+  }
+
+  .contact_subtitle {
+    font-size: 1rem; /* Adjust subtitle size for small screens */
+  }
+
+  .desc_heading {
+    font-size: 1.25rem; /* Adjust heading size for mobile */
+  }
+
+  .descpara {
+    padding: 1rem; /* Reduce padding for better mobile fit */
+  }
+
+  .contact-inputs input,
+  .contact-inputs textarea {
+    padding: 0.5rem; /* Reduce padding for better fit on small screens */
+    font-size: 0.9rem; /* Adjust font size */
+  }
+  .Submit_button {
+    padding-left: 0;
+    margin-left: 0.1rem;
   }
 }

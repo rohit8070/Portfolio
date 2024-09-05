@@ -3,7 +3,6 @@
   padding-top: 4rem;
   /* margin-top: 5rem; */
   /* border: 2px solid black; */
-  
 }
 .projects_title {
   text-align: center;
@@ -130,4 +129,38 @@
 .active-modal {
   opacity: 1;
   visibility: visible;
+}
+
+@media screen and (max-width: 992px) {
+  .projects_container {
+    grid-template-columns: repeat(3, 218px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .projects_container {
+    grid-template-columns: repeat(2, 218px);
+  }
+  .project_content {
+    padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+    margin: 0.5rem;
+  }
+  .projects_icon {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .projects_modal-content {
+    padding: 4.5rem 1.5rem 2.5rem;
+  }
+  .projects_modal-description {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 391px) {
+  .projects_container {
+    grid-template-columns: max-content;
+  }
+  .project_content {
+    padding-right: 6rem;
+  }
 }

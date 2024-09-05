@@ -81,6 +81,7 @@
 @media screen and (max-width: 992px) {
   .home {
     flex-direction: column;
+    padding-top: 0.1rem;
   }
 
   .desc {
@@ -91,7 +92,8 @@
 
   .image {
     width: 100%;
-    padding-top: 1rem;
+    padding-top: 0.01rem;
+    margin-bottom: 1rem;
   }
 }
 

@@ -1,7 +1,6 @@
 .about {
-  min-height: 75vh; /* Ensure this section takes at least full viewport height */
+  min-height: 75vh;
   padding-top: 5rem;
-  /* border: 2px solid black; */
 }
 
 .aboutheading {
@@ -9,56 +8,140 @@
   padding-top: 2rem;
   font-weight: 600;
 }
+
 .aboutsubheading {
   text-align: center;
 }
+
 .container {
   display: flex;
   flex-wrap: wrap;
 }
+
+.aboutimage,
+.info {
+  min-height: 50vh;
+  width: 100%;
+}
+
 .aboutimage {
-  min-height: 75vh;
-  width: 50vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .image1 {
-  height: 300px;
-  width: 350px;
+  height: auto;
+  width: 80%;
+  max-width: 350px;
   border-radius: 6%;
-  margin-left: 3rem;
 }
 
-.info {
-  min-height: 75vh;
-  width: 50vw;
-  /* border: 2px solid black; */
-}
 .infopara {
   padding: 2rem;
-  padding-right: 3rem;
-  margin-top: 5rem;
   font-size: 18px;
   font-weight: 600;
 }
 
 .buttoncv {
   background-color: #555555;
-  width: 8rem;
+  width: 100%;
+  max-width: 8rem;
   height: 3rem;
   color: aliceblue;
-  padding: px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
   border-radius: 0.5rem;
-  margin-left: 2rem;
+  margin-top: 2rem;
 }
+
 .buttoncv:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
+}
+
+/* Responsive Styles */
+@media only screen and (min-width: 768px) {
+  .container {
+    flex-wrap: nowrap;
+    padding-top: 1rem;
+  }
+
+  .aboutimage,
+  .info {
+    width: 50%;
+  }
+
+  .image1 {
+    height: 300px;
+    width: 350px;
+    margin-left: 3rem;
+  }
+
+  .infopara {
+    padding: 2rem;
+    padding-right: 3rem;
+    margin-top: 1rem;
+  }
+
+  .buttoncv {
+    margin-left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutimage,
+  .info {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .infopara {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    font-size: 16px;
+  }
+
+  .buttoncv {
+    width: auto;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .about {
+    padding-top: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .aboutimage,
+  .info {
+    padding: 0 1rem;
+  }
+
+  .image1 {
+    padding-top: 1rem;
+    width: 90%;
+  }
+
+  .infopara {
+    padding: 1rem;
+    font-size: 16px;
+  }
+
+  .buttoncv {
+    width: 100%;
+  }
+  .about {
+    padding-top: none;
+  }
 }

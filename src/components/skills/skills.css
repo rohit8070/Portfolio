@@ -1,6 +1,6 @@
 .skills {
   min-height: 75vh; /* Ensure this section takes at least full viewport height */
-  padding-top:3rem;/* border: 2px solid black; */
+  padding-top: 3rem; /* border: 2px solid black; */
 }
 .skills_title {
   text-align: center;
@@ -15,7 +15,6 @@
   font-weight: 900;
   padding-bottom: 1rem;
 }
-
 
 .skills_container {
   display: grid;
@@ -67,4 +66,31 @@
 
 .skill_level {
   font-size: 0.8rem;
+}
+
+@media screen and (max-width: 992px) {
+  .skills_title {
+    padding-top: 1rem;
+  }
+  .skills_container {
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .skills_container {
+    grid-template-columns: 1fr;
+  }
+  .skill_content {
+    padding: 0.5rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .skill_box {
+    column-gap: 1.25rem;
+  }
+  .skill_name {
+    font-size: small;
+  }
 }

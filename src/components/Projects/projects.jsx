@@ -16,7 +16,7 @@ export default function Projects() {
           <div className="project_content">
             <div>
               <i className="uil uil-web-grid projects_icon"></i>
-              <h3 className=" project_title">Portfolio Website</h3>
+              <h3 className=" project_title">Portfolio</h3>
             </div>
             <span className="projects_button" onClick={() => toggleTab(1)}>
               View More
