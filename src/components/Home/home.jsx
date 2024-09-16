@@ -12,7 +12,7 @@ export default function Home() {
             development process of web applications.
           </p>
           <button className="button">
-            <a href="#contact" style={{ color: "white" }}>
+            <a href="https://wa.link/95vhvm" style={{ color: "white" }}>
               Say hello
             </a>
           </button>
